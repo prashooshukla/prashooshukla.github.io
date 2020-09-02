@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="home-html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assests/style.css">
+    <title>Portfolio - Prashoo</title>
+</head>
+
+<body class="text-center full-body">
+
+    <div class="container p-3 d-flex flex-column h-100 mx-auto">
+        <header class=" nav-spacer">
+
+            <h3 class="masthead-brand">
+                <i class="nes-icon coin"></i>
+                Prashoo Shukla</h3>
+
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="project.html">Projects</a>
+                <a class="nav-link" href="resume.html">Resume</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="container nes-container mb-4">
+            <div class="col-md-12">
+                <h1>Gallery</h1>
+
+            </div>
+            <div class="col-md-12 mb-4">
+                <button type="button" class="nes-btn filter-button" data-filter="all">All</button>
+                <button type="button" class="nes-btn is-success filter-button" data-filter="web">Web</button>
+                <button type="button" class="nes-btn is-warning filter-button" data-filter="desktop">Desktop</button>
+                <button type="button" class="nes-btn is-error filter-button" data-filter="ai">Artificial
+                    intelligence</button>
+                <button type="button" class="nes-btn is-primary filter-button" data-filter="games">Games</button>
+            </div>
+            <div class="nes-container">
+                Soon I'll be adding my projects here!!!<br />
+                Take a look at my <a href="resume.html">resume</a>
+            </div>
+            <!-- <img src="http://unsplash.it/" alt="image" /> -->
+            <!-- <div class="row mb-4">
+                <div class="m-auto nes-pointer col-md-4 filter web">
+                    <img src="assests/img/portfolio/cabin.png" alt="cabin" class="img-responsive">
+                </div>
+                <div class="m-auto nes-pointer col-md-4 filter desktop">
+                    <img src="assests/img/portfolio/cake.png" alt="cabin" class="img-responsive">
+                </div>
+                <div class="m-auto nes-pointer col-md-4 filter desktop">
+                    <img src="assests/img/portfolio/circus.png" alt="cabin" class="img-responsive">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="m-auto nes-pointer col-md-4 filter games">
+                    <img src="assests/img/portfolio/game.png" alt="cabin" class="img-responsive">
+                </div>
+                <div class="m-auto nes-pointer col-md-4 filter ai">
+                    <img src="assests/img/portfolio/safe.png" alt="cabin" class="img-responsive">
+                </div>
+                <div class="m-auto nes-pointer col-md-4 filter web">
+                    <img src="assests/img/portfolio/submarine.png" alt="cabin" class="img-responsive">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="nes-container with-title m-auto nes-pointer col-md-4 filter games">
+                    <p class="title">Games</p>
+                    <img src="assests/img/portfolio/game.png" alt="cabin" class="img-responsive">
+                </div>
+                <div class="m-auto nes-pointer col-md-4 filter web">
+                    <img src="assests/img/portfolio/safe.png" alt="cabin" class="img-responsive">
+                </div>
+                <div class="m-auto nes-pointer col-md-4 filter ai">
+                    <img src="assests/img/portfolio/cabin.png" alt="cabin" class="img-responsive">
+                </div>
+            </div> -->
+        </div>
+        <footer class="mt-auto">
+            <p>
+                Made with <i class="nes-icon is-small heart "></i>, by
+                <a target="_blank" href="https://www.facebook.com/prashooshukla">@prashooshukla</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.filter').show('1000');
+                } else {
+                    $('.filter').not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
