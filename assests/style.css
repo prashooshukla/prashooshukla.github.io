@@ -65,3 +65,12 @@ body {
     color: grey;
 }
 
+#about-me {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#project {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
