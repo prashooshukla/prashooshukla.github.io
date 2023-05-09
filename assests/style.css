@@ -25,6 +25,10 @@ body {
     border-bottom: 0.25rem solid transparent;
 }
 
+.mainbody {
+    margin: auto;
+}
+
 .nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
     color: black;
     border-bottom-color: gray;
